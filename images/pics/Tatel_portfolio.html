@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khloe D. Tatel — BSIT 253</title>
+  <meta name="description" content="Portfolio of a BSIT student — projects, skills, and experiences." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#7dd3fc; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --pad:20px; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#071026 0%, #081226 60%); color:#e6eef6; -webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:92px;height:92px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022;box-shadow:0 6px 20px rgba(0,0,0,0.6)}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:22px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr} .side{order:2}}
+
+    .card{background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.7));padding:var(--pad);border-radius:var(--radius);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    @media (max-width:640px){.projects{grid-template-columns:1fr}}
+    .project{background:var(--glass);padding:12px;border-radius:12px;transition:transform .2s ease, background .2s ease;overflow:hidden}
+    .project:hover{transform:translateY(-6px);background:rgba(255,255,255,0.08)}
+    .project h3{margin:0 0 6px;font-size:1rem}
+    .meta{font-size:0.84rem;color:var(--muted)}
+    .tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:0.78rem;color:var(--muted)}
+
+    .gallery{display:none;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:10px}
+    .gallery img{width:100%;border-radius:8px;object-fit:cover}
+    .project:hover .gallery{display:grid}
+
+    .skills{display:flex;flex-direction:column;gap:10px}
+    .skill{display:flex;flex-direction:column}
+    .skill .label{display:flex;justify-content:space-between;font-size:0.86rem;color:var(--muted)}
+    .bar{height:10px;background:rgba(255,255,255,0.04);border-radius:999px;margin-top:6px;overflow:hidden}
+    .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa);border-radius:999px}
+
+    .timeline{display:flex;flex-direction:column;gap:14px}
+    .exp{display:flex;gap:12px}
+    .exp .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);margin-top:6px}
+    .exp .body{color:var(--muted)}
+
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,#0ea5e9,#60a5fa);color:#042a38;border:none;cursor:pointer;font-weight:600}
+    .outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    footer{margin-top:20px;color:var(--muted);font-size:0.86rem;text-align:center}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:10px;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="container">
+  <header>
+   <div class="avatar">
+  <img src="https://i.imgur.com/mLZNRkI.jpg" alt="Khloe Tatel" style="width:100%;height:100%;border-radius:12px;object-fit:cover;">
+</div>
+
+    <div>
+      <h1>Khloe D. Tatel — BSIT Student</h1>
+      <p class="lead">Former ITMAWD student (STI College Las Piñas). Specializes in application making, Android Studio developer, and team leader.</p>
+      <div class="row" style="margin-top:8px">
+        <small class="muted">Location:</small><small>Philippines</small>
+        <small class="muted">•</small>
+        <small class="muted">Email:</small><small>kdtatel@student.apc.edu.ph</small>
+      </div>
+    </div>
+  </header>
+</div>
+
+
+    <div class="grid">
+      <main>
+    
+        <section class="card">
+          <h2 style="margin-top:0">About Me</h2>
+          <p class="muted">Hello! I'm a BSIT student with a background in IT in Mobile App and Web Development (ITMAWD). I’ve built apps in Android Studio (including a quiz app), created websites with animations, designed pixel art for our 2D game, and led project teams.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">My Projects</h2>
+          <div class="projects">
+            
+
+            <article class="project">
+              <h3>Payroll System</h3>
+              <div class="meta">Visual Studio • Java</div>
+              <p class="muted">Accurate payroll calculations, user management, and can compute holidays, leaves, and bonuses.</p>
+              <div class="tags"><span class="tag">Database</span></div>
+              <div class="gallery">
+                <img src="https://imgur.com/DFoWKbR.png" alt="Payroll Screenshot">
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Animated Websites + Magazines</h3>
+              <div class="meta">HTML/CSS/JS • Animations • Editing </div>
+              <p class="muted"> Magazine publication and web with smooth animations.</p>
+              <div class="tags"><span class="tag">Website</span><span class="tag">Animations</span></div>
+              <div class="gallery">
+               <img src="https://i.imgur.com/WxiCCOk.jpg" alt="Magazine 1">
+                <img src="https://i.imgur.com/eOS1wSA.jpg" alt="Magazine 2">
+                <img src="https://i.imgur.com/lH6Z62z.jpg" alt="Magazine 3">
+
+              </div>
+            </article>
+
+            <article class="project">
+              <h3>Mobile Applications</h3>
+              <div class="meta">Android Studio • Java</div>
+              <p class="muted">Apps built for learning and productivity, including quizzes and utilities.</p>
+              <div class="tags"><span class="tag">Android</span><span class="tag">Utility</span></div>
+              <div class="gallery">
+                <img src="https://i.imgur.com/kJYJPfB.jpg" alt="App 1">
+                <img src="https://i.imgur.com/CjfMs3X.jpg" alt="App 2">
+                <img src="https://i.imgur.com/931RocO.jpg" alt="App 3">
+                <img src="https://i.imgur.com/ALq6erD.jpg" alt="App 4">
+              </div>
+            </article>
+
+        
+            <article class="project">
+              <h3>Pixel Art</h3>
+              <div class="meta">Aseprite • Photoshop</div>
+              <p class="muted">Sprites and assets for 2D games.</p>
+              <div class="tags"><span class="tag">Game Art</span></div>
+              <div class="gallery">
+                <img src="https://i.imgur.com/VFBogbk.jpg" alt="Pixel 1">
+                <img src="https://i.imgur.com/BnPUrtn.jpg" alt="Pixel 2">
+                <img src="https://i.imgur.com/f3NYHvM.jpg" alt="Pixel 3">
+                <img src="https://i.imgur.com/XtV4jyX.jpg" alt="Pixel 4">
+              </div>
+            </article>
+
+           
+            <article class="project">
+              <h3>Games</h3>
+              <div class="meta">Unity • Android Studio</div>
+              <p class="muted">2D game prototypes with pixel art, basic AI, and progression.</p>
+              <div class="tags"><span class="tag">Game Dev</span></div>
+              <div class="gallery">
+                <img src="https://i.imgur.com/LORxSG1.jpg" alt="Game 1">
+                <img src="https://i.imgur.com/zpJ9VpD.jpg" alt="Game 2">
+                <img src="https://i.imgur.com/LvsFuAt.jpg" alt="Game 3">
+                <img src="https://i.imgur.com/onzkaCE.jpg" alt="Game 4">
+                <img src="https://i.imgur.com/WH1VNYO.jpg" alt="Game 5">
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2 style="margin-top:0">Experiences & Leadership</h2>
+          <div class="timeline">
+            <div class="exp">
+              <div class="dot"></div>
+              <div class="body"><strong>Team Leader in School Projects</strong><br><span class="muted">Coordinated app projects, assigned tasks, and monitored deadlines.</span></div>
+            </div>
+
+            <div class="exp">
+              <div class="dot"></div>
+              <div class="body"><strong>2nd honors in Grade 12 ITMAWD A.Y 2025 (STI LP)</strong><br><span class="muted">Joined 3 clubs during SHS years.</span></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="side">
+        <div class="card">
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="skills">
+            <div class="skill"><div class="label"><span>Android Studio (Java)</span><span>30%</span></div><div class="bar"><i style="width:30%"></i></div></div>
+            <div class="skill"><div class="label"><span>Web (HTML/CSS/JS)</span><span>50%</span></div><div class="bar"><i style="width:50%"></i></div></div>
+            <div class="skill"><div class="label"><span>Unity / Game Dev (C#)</span><span>20%</span></div><div class="bar"><i style="width:20%"></i></div></div>
+            <div class="skill"><div class="label"><span>Pixel Art & Sprites</span><span>40%</span></div><div class="bar"><i style="width:40%"></i></div></div>
+            <div class="skill"><div class="label"><span>Databases (SQLite / MySQL)</span><span>30%</span></div><div class="bar"><i style="width:30%"></i></div></div>
+          </div>
+
+          <div style="margin-top:12px">
+            <h3 style="margin:0 0 8px 0">Contact</h3>
+            <div class="muted">Email</div>
+            <div>kdtatel@student.apc.edu.ph</div>
+            <div class="muted" style="margin-top:8px">LinkedIn / GitHub</div>
+            <div class="muted">https://github.com/KTatel • https://www.linkedin.com/in/khloe-tatel-</div>
+
+            <div class="cta">
+              <button class="btn outline" onclick="toggleTheme()">Light / Dark Mode</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h3 style="margin-top:0">Quick Pitch</h3>
+          <p class="muted">I can combine my technical skills from BSIT and ITMAWD with a creative approach to game art and UI. I personally enjoy building apps and prototyping games.</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="muted">klowii #1521 - Valorant</footer>
+    <footer class="muted">daniela123_jm - Roblox</footer>
+  </div>
+
+  <script>
+  function toggleTheme(){
+    const root = document.documentElement;
+    if(root.style.getPropertyValue('--bg') === '#0f1724'){
+    
+      root.style.setProperty('--bg','#fbb6ce'); 
+      root.style.setProperty('--card','#ffd966'); 
+      root.style.setProperty('--muted','#5a3e42'); 
+      root.style.setProperty('--accent','#ff8fab');
+      document.body.style.background='linear-gradient(180deg,#ffb6c1 0%, #fff176 100%)'; 
+      document.body.style.color='#3a1c1c';
+    } else {
+
+      root.style.setProperty('--bg','#0f1724'); 
+      root.style.setProperty('--card','#0b1220'); 
+      root.style.setProperty('--muted','#fef9c3'); 
+      root.style.setProperty('--accent','#fde047');
+      document.body.style.background='linear-gradient(180deg,#0f1724 0%, #facc15 100%)'; 
+      document.body.style.color='#e6eef6';
+    }
+  }
+</script>
+
+</body>
+</html>
