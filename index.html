@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khloe D. Tatel | IT253 webprog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="petal-bg" aria-hidden="true"></div>
+
+  <section id="start-screen" class="start-overlay">
+    <div class="start-card">
+      <div class="start-sparkle">✿ ❀ ✿</div>
+      <p class="start-welcome">Welcome to my website!</p>
+      <h1 class="start-title">Khloe D. Tatel</h1>
+      <button id="press-start-btn" class="press-start-btn" type="button">
+        <span>PRESS START</span>
+      </button>
+    </div>
+  </section>
+
+  <div id="app-shell" class="app-shell hidden">
+
+    <header class="top-bar">
+      <div class="brand-badge">
+        <span class="brand-dot"></span>
+        <span class="brand-text">IT253 webprog</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <button class="nav-tab active" data-tab="about">About Me</button>
+        <button class="nav-tab" data-tab="projects">Projects</button>
+        <button class="nav-tab" data-tab="hobbies">Hobbies</button>
+        <button class="nav-tab" data-tab="certifications">Certifications</button>
+        <button class="nav-tab" data-tab="socials">Socials & Life</button>
+        <button class="nav-tab nav-tab-game" data-tab="game">Petal Maze</button>
+      </nav>
+    </header>
+
+    <main class="main-content">
+
+      <section id="tab-about" class="tab-panel active">
+        <div class="about-grid">
+
+          <aside class="profile-sidebar">
+            <div class="glass-card avatar-card">
+              <div class="avatar-frame">
+                <svg class="mini-me-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Khloe Mini Me Avatar">
+                  <defs>
+                    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ffd6e8"/>
+                      <stop offset="50%" stop-color="#e9d5ff"/>
+                      <stop offset="100%" stop-color="#fef08a"/>
+                    </linearGradient>
+                    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#2d1b2e"/>
+                      <stop offset="100%" stop-color="#1a0f1e"/>
+                    </linearGradient>
+                    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#f472b6"/>
+                      <stop offset="100%" stop-color="#c084fc"/>
+                    </linearGradient>
+                  </defs>
+                  <circle cx="110" cy="110" r="102" fill="url(#bgGrad)" stroke="#f472b6" stroke-width="3"/>
+                  <path d="M45 95 C30 120, 35 165, 55 185 C75 200, 145 200, 165 185 C185 165, 190 120, 175 95 C168 60, 140 42, 110 42 C80 42, 52 60, 45 95 Z" fill="url(#hairGrad)"/>
+                  <circle cx="44" cy="130" r="16" fill="#231426"/>
+                  <circle cx="176" cy="130" r="16" fill="#231426"/>
+                  <circle cx="48" cy="158" r="14" fill="#1a0f1e"/>
+                  <circle cx="172" cy="158" r="14" fill="#1a0f1e"/>
+                  <path d="M58 198 C65 162, 155 162, 162 198 Z" fill="url(#shirtGrad)"/>
+                  <path d="M92 166 L110 184 L128 166" fill="#fff0f6" stroke="#f472b6" stroke-width="2"/>
+                  <rect x="98" y="142" width="24" height="26" rx="10" fill="#fde2d2"/>
+                  <ellipse cx="110" cy="112" rx="44" ry="42" fill="#ffe6d8"/>
+                  <ellipse cx="80" cy="120" rx="9" ry="5" fill="#fb7185" opacity="0.45"/>
+                  <ellipse cx="140" cy="120" rx="9" ry="5" fill="#fb7185" opacity="0.45"/>
+                  <circle cx="88" cy="108" r="5.5" fill="#2d1b2e"/>
+                  <circle cx="132" cy="108" r="5.5" fill="#2d1b2e"/>
+                  <circle cx="86" cy="106" r="2" fill="#ffffff"/>
+                  <circle cx="130" cy="106" r="2" fill="#ffffff"/>
+                  <path d="M79 100 Q88 95 96 101" stroke="#2d1b2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <path d="M124 101 Q132 95 141 100" stroke="#2d1b2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                  <circle cx="88" cy="109" r="15" fill="rgba(255,255,255,0.2)" stroke="#db2777" stroke-width="3"/>
+                  <circle cx="132" cy="109" r="15" fill="rgba(255,255,255,0.2)" stroke="#db2777" stroke-width="3"/>
+                  <line x1="103" y1="109" x2="117" y2="109" stroke="#db2777" stroke-width="3"/>
+                  <path d="M101 128 Q110 135 119 128" stroke="#be185d" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                  <path d="M62 92 Q80 65 110 74 Q140 65 158 92 Q145 72 110 68 Q75 72 62 92 Z" fill="url(#hairGrad)"/>
+                  <path d="M65 82 C52 95, 56 118, 66 126" stroke="#2d1b2e" stroke-width="8" fill="none" stroke-linecap="round"/>
+                  <path d="M155 82 C168 95, 164 118, 154 126" stroke="#2d1b2e" stroke-width="8" fill="none" stroke-linecap="round"/>
+                  <circle cx="152" cy="78" r="7" fill="#f472b6"/>
+                  <circle cx="152" cy="78" r="3" fill="#fef08a"/>
+                </svg>
+              </div>
+              <h2 class="profile-name">Khloe Delacruz Tatel</h2>
+              <span class="nickname-pill">Nickname: Kyo</span>
+              <p class="profile-tagline">BSIT | 19yrs | ENTJ | Mobile & Web Developer</p>
+            </div>
+
+            <div class="glass-card motto-card">
+              <span class="card-eyebrow">MY MOTTO</span>
+              <blockquote class="motto-quote">"Hardwork beats all."</blockquote>
+            </div>
+          </aside>
+
+          <div class="about-main">
+
+            <div class="glass-card honor-card">
+              <div class="honor-header">
+                <span class="card-eyebrow">ACADEMIC HONOR & CORE LANGUAGES</span>
+                <span class="honor-badge">100% SM Foundation Scholar</span>
+              </div>
+              <div class="honor-highlight">
+                <div class="trophy-icon">🏆</div>
+                <div>
+                  <h3>Ranked 2 out of ~150 Students in Mobile App and Web Development</h3>
+                  <p>
+                    Graduated Senior High School at <strong>STI College Las Piñas</strong> (Ranked 1 in Class &amp; Top 3% of 800+ Graduating Batch), currently pursuing <strong>BS in Information Technology</strong> at <strong>Asia Pacific College</strong>.
+                  </p>
+                </div>
+              </div>
+              <div class="core-lang-box">
+                <span class="core-label">Core Languages:</span>
+                <div class="pill-row">
+                  <span class="lang-pill">Java</span>
+                  <span class="lang-pill">C#</span>
+                  <span class="lang-pill">Python</span>
+                  <span class="lang-pill">JavaScript</span>
+                  <span class="lang-pill">SQL</span>
+                  <span class="lang-pill">HTML5</span>
+                  <span class="lang-pill">CSS3</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card matrix-card">
+              <span class="card-eyebrow">TECH SKILL MATRIX</span>
+              <h3 class="section-subtitle">Languages, Web Stack & Development Environments</h3>
+              <div class="matrix-grid">
+                <div class="matrix-group">
+                  <h4>Programming Languages</h4>
+                  <ul class="skill-tags">
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>JavaScript (JS)</li>
+                  </ul>
+                </div>
+                <div class="matrix-group">
+                  <h4>Web & Database</h4>
+                  <ul class="skill-tags">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+                <div class="matrix-group">
+                  <h4>IDEs & Dev Tools</h4>
+                  <ul class="skill-tags">
+                    <li>Android Studio</li>
+                    <li>VS Code / Visual Studio</li>
+                    <li>NetBeans</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card chat-card">
+              <div class="chat-header">
+                <span class="card-eyebrow">INTERACTIVE TERMINAL</span>
+                <h3 class="section-subtitle">Chat with me!</h3>
+              </div>
+              <div id="chat-box" class="chat-box">
+                <div class="chat-msg bot">
+                  <span class="chat-sender">Kyo:</span>
+                  <p>Hi there! Welcome to my space. Click any question below to chat with me!</p>
+                </div>
+              </div>
+              <div class="chat-prompts">
+                <button class="chat-btn" data-q="What do you love building?">What do you love building?</button>
+                <button class="chat-btn" data-q="Tell me a fun fact!">Tell me a fun fact!</button>
+                <button class="chat-btn" data-q="What are your current tech interests?">Current tech interests?</button>
+                <button class="chat-btn" data-q="How do you stay organized?">How do you stay organized?</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+     
+      <section id="tab-projects" class="tab-panel">
+        <div class="section-banner">
+          <span class="card-eyebrow">PORTFOLIO ARCHIVE</span>
+          <h2>Project Works &amp; Archive</h2>
+          <p>Click any project snapshot below to expand it to full resolution.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/pixels/1.png" data-fallback="https://i.imgur.com/bM84lHP.png" alt="Pixels Cloud Memory Vault" class="expandable-img">
+              <span class="project-tag">Android • Kotlin • Compose</span>
+            </div>
+            <div class="project-body">
+              <h3>Pixels: Cloud Digital Memory Vault</h3>
+              <p class="project-tech">Android Studio • Kotlin • Jetpack Compose • Firebase Firestore</p>
+              <p class="project-desc">
+                Custom interactive app and cloud-synced digital memory vault featuring Guest Viewer mode, PIN-protected Admin Portal, on-device image compression + Base64 Firestore sync, Canvas sparkle animations, and an integrated Lofi music controller.
+              </p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/threadopsy/1.png" data-fallback="https://i.imgur.com/hemZZL0.png" alt="Threadopsy App" class="expandable-img">
+              <span class="project-tag">On-Device ML • SDG 12 &amp; 14</span>
+            </div>
+            <div class="project-body">
+              <h3>Threadopsy: Wardrobe Tag Forensics</h3>
+              <p class="project-tech">Kotlin • Jetpack Compose • CameraX • Google ML Kit • Firebase</p>
+              <p class="project-desc">
+                3-second offline-capable OCR camera scanner that extracts exact garment fiber ratios, calculates microplastic shedding risk with custom wash protocols, and tracks Cost-Per-Wear sustainability metrics.
+              </p>
+              <div class="project-links">
+                <a href="https://lnkd.in/gR6gMe3N" target="_blank" rel="noopener">View Source &amp; Docs ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/cherryCiphew/1.png" data-fallback="https://i.imgur.com/bM84lHP.png" alt="Cherry Cipher" class="expandable-img">
+              <span class="project-tag">Gamified Web • Custom SVG</span>
+            </div>
+            <div class="project-body">
+              <h3>Cherry Cipher</h3>
+              <p class="project-tech">HTML5 • CSS3 • JavaScript • Custom SVG</p>
+              <p class="project-desc">
+                Interactive cryptography puzzle platform and digital terrarium featuring SVG growth simulations and collectible cherry artifacts across alchemical rarity tiers.
+              </p>
+              <div class="project-links">
+                <a href="https://lnkd.in/g3tbTvbc" target="_blank" rel="noopener">Explore Project ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/LUME/1.png" data-fallback="https://i.imgur.com/hemZZL0.png" alt="Lumé AI Achievement Logger" class="expandable-img">
+              <span class="project-tag">BWAI Hackathon • AI Tool</span>
+            </div>
+            <div class="project-body">
+              <h3>Lumé (Luminate Me)</h3>
+              <p class="project-tech">AI Workflow • Web UI • JavaScript</p>
+              <p class="project-desc">
+                Built during the Build With AI Hackathon—an AI-powered real-time achievement logger and turnover documentation tool that transforms quick notes (even Taglish) into polished resume bullets and LinkedIn posts.
+              </p>
+              <div class="project-links">
+                <a href="https://lnkd.in/gg959qAx" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                <a href="https://lnkd.in/gtc_R53H" target="_blank" rel="noopener">Notion Docs ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/KhloeLore/1.png" data-fallback="https://i.imgur.com/bM84lHP.png" alt="KhloeLore Portfolio" class="expandable-img">
+              <span class="project-tag">Interactive UI • Web</span>
+            </div>
+            <div class="project-body">
+              <h3>KhloeLore Character Hub</h3>
+              <p class="project-tech">HTML5 • CSS3 • JavaScript • GitHub Pages</p>
+              <p class="project-desc">
+                Gamified pastel RPG-inspired web hub designed with custom SVG art, floral connectors, and interactive sections.
+              </p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/GameUnity/1.png" data-fallback="https://i.imgur.com/hemZZL0.png" alt="Unity Game Project" class="expandable-img">
+              <span class="project-tag">Game Dev • C#</span>
+            </div>
+            <div class="project-body">
+              <h3>Unity Game Development Build</h3>
+              <p class="project-tech">C# • Unity Engine</p>
+              <p class="project-desc">
+                Interactive game mechanics and environment build scripted in C# using the Unity Engine.
+              </p>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/2ndportoflio/1.png" data-fallback="https://i.imgur.com/hemZZL0.png" alt="2nd Portfolio Website" class="expandable-img">
+              <span class="project-tag">Web Archive</span>
+            </div>
+            <div class="project-body">
+              <h3>2nd Personal Portfolio Webpage</h3>
+              <p class="project-tech">HTML5 • CSS3 • GitHub Pages</p>
+              <p class="project-desc">
+                An earlier web development milestone showcasing my growth in responsive layouts and styling.
+              </p>
+              <div class="project-links">
+                <a href="https://khloedtatel.github.io/potpot/Tatel_portfolio%20(2).html" target="_blank" rel="noopener">Live Archive Link ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card project-card">
+            <div class="project-img-wrap">
+              <img src="images/projects/1stMobileApp/1.png" data-fallback="https://i.imgur.com/2Om6mBw.png" alt="1st Mobile App SHS" class="expandable-img">
+              <span class="project-tag">SHS Origin Story</span>
+            </div>
+            <div class="project-body">
+              <h3>1st Mobile App (SHS Capstone)</h3>
+              <p class="project-tech">Java • Android Studio</p>
+              <p class="project-desc">
+                My very first mobile programming app in Senior High School—the unforgettable -10 database lesson that inspired me to always double-check every schema and backend pipeline I build today!
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="tab-hobbies" class="tab-panel">
+        <div class="section-banner">
+          <span class="card-eyebrow">LEISURE &amp; INTERESTS</span>
+          <h2>See where we have in common:</h2>
+        </div>
+
+        <div class="flower-connector-bar" role="tablist" aria-label="Hobbies Categories">
+          <button class="flower-node active" data-hobby="valorant" role="tab">
+            <span class="flower-icon">✿</span>
+            <span class="flower-label">Valorant</span>
+          </button>
+          <span class="vine-line"></span>
+          <button class="flower-node" data-hobby="roblox" role="tab">
+            <span class="flower-icon">❀</span>
+            <span class="flower-label">Roblox</span>
+          </button>
+          <span class="vine-line"></span>
+          <button class="flower-node" data-hobby="manhwa" role="tab">
+            <span class="flower-icon">✿</span>
+            <span class="flower-label">Manhwa &amp; Novel</span>
+          </button>
+          <span class="vine-line"></span>
+          <button class="flower-node" data-hobby="genshin" role="tab">
+            <span class="flower-icon">❀</span>
+            <span class="flower-label">Genshin</span>
+          </button>
+          <span class="vine-line"></span>
+          <button class="flower-node" data-hobby="moments" role="tab">
+            <span class="flower-icon">✿</span>
+            <span class="flower-label">Random Moments Pics</span>
+          </button>
+        </div>
+
+        <div class="glass-card hobby-showcase">
+          <div class="hobby-showcase-header">
+            <span class="hobby-subtitle">check some of my pictures~</span>
+            <h3 id="hobby-current-title">Valorant</h3>
+          </div>
+
+          <div id="hobby-gallery-grid" class="hover-gallery-grid">
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-certifications" class="tab-panel">
+        <div class="section-banner">
+          <span class="card-eyebrow">VERIFIED CREDENTIALS &amp; HONORS</span>
+          <h2>Certifications, Scholarships &amp; Competitions</h2>
+          <p>
+            Verified badges on
+            <a href="https://www.credly.com/users/khloe-tatel" target="_blank" rel="noopener">Credly ↗</a>
+            and
+            <a href="https://learn.cylabacademy.org/users/kt4731" target="_blank" rel="noopener">CyLab Security Academy ↗</a>
+          </p>
+        </div>
+
+        <div class="glass-card spotlight-cert-card">
+          <div class="spotlight-badge">★ INTERNATIONAL COMPETITION HIGHLIGHT ★</div>
+          <div class="spotlight-content">
+            <div class="spotlight-text">
+              <h3>International Computer Science Competition (ICSC)</h3>
+              <p class="cert-issuer">Global Competitive Programming &amp; Computer Science Challenge</p>
+              <p>
+                Challenged my algorithmic problem-solving, theoretical computer science foundations, and quantitative logic on an international stage—one of my favorite competitive upskilling side quests!
+              </p>
+            </div>
+            <div class="spotlight-images">
+              <div class="hover-img-card" data-caption="ICSC Qualifier">
+                <img src="images/certificates/int'l competition.jpg" data-fallback="https://i.imgur.com/6vT8Rp5.png" alt="International Computer Science Competition 1" class="expandable-img">
+              </div>
+              <div class="hover-img-card" data-caption="ICSC Certificate">
+                <img src="images/certificates/int'l computer sci comp.jpg" data-fallback="https://i.imgur.com/6vT8Rp5.png" alt="International Computer Science Competition 2" class="expandable-img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="glass-card cert-item-card">
+            <span class="cert-tag">Scholarship &amp; Academic Honors</span>
+            <h3>SM Foundation College Scholar (100% Grant)</h3>
+            <p class="cert-issuer">Issued by SM Foundation • Selected as 1 of 900 scholars nationwide</p>
+            <ul class="cert-list">
+              <li><strong>Asia Pacific College Honors</strong> (A.Y. 2025–2026)</li>
+              <li><strong>Grade 12 Academic Excellence Award</strong> – Ranked 1 in Class, Ranked 2 in IT Strand (~150), Top 3% of Graduating Batch (800+)</li>
+              <li><strong>Payroll System Pitch Award</strong> – Java &amp; HTML/CSS Collaboration (STI College Las Piñas)</li>
+            </ul>
+          </div>
+
+          <div class="glass-card cert-item-card">
+            <span class="cert-tag">The Linux Foundation &amp; Cybrary</span>
+            <h3>Linux &amp; Information Security Credentials</h3>
+            <p class="cert-issuer">The Linux Foundation • Cybrary • CyLab Academy</p>
+            <ul class="cert-list">
+              <li><strong>Introduction to Linux (LFS101)</strong> – The Linux Foundation (Dec 2025)</li>
+              <li><strong>ISACA Certified Information System Manager (CISM) Cert Prep</strong> – Cybrary</li>
+              <li><strong>Computer Programming NC III (8 Modules, 320 hrs each)</strong> – Java, HTML/CSS, SQL, .NET Technology &amp; Mobile App Programming</li>
+            </ul>
+          </div>
+
+          <div class="glass-card cert-item-card">
+            <span class="cert-tag">IBM SkillsBuild Verified Badges</span>
+            <h3>IBM Cybersecurity, Web &amp; IT Credentials</h3>
+            <p class="cert-issuer">Issued by IBM SkillsBuild (2026)</p>
+            <ul class="cert-list">
+              <li><strong>Cybersecurity Fundamentals</strong> – Cyber Risk Management (Apr 2026)</li>
+              <li><strong>Explore Emerging Tech</strong> – Cloud &amp; Cybersecurity (Mar 2026)</li>
+              <li><strong>Lifelong Professional Skills</strong> – Project Management (Mar 2026)</li>
+              <li><strong>Web Development Fundamentals</strong> – Web Design &amp; Dev (Feb 2026)</li>
+              <li><strong>Information Technology Fundamentals</strong> – IT Architectures (Feb 2026)</li>
+              <li><strong>IBM Digital Mind</strong> – Data-Driven Problem Solving (Feb 2026)</li>
+            </ul>
+          </div>
+
+          <div class="glass-card cert-item-card">
+            <span class="cert-tag">DataCamp, SoloLearn &amp; Events</span>
+            <h3>Cloud, Python, C# &amp; Media Relations</h3>
+            <p class="cert-issuer">DataCamp Scholar • SoloLearn • Arduino Day PH</p>
+            <ul class="cert-list">
+              <li><strong>DataCamp Scholar (2026)</strong></li>
+              <li><strong>AWS Concepts</strong> – DataCamp (#45,905,072)</li>
+              <li><strong>Intermediate Python for Developers</strong> – DataCamp (#45,661,319)</li>
+              <li><strong>Understanding Cloud Computing</strong> – DataCamp (#45,604,774)</li>
+              <li><strong>C# Programming Certification</strong> – SoloLearn</li>
+              <li><strong>Arduino Day Philippines 2026</strong> – Media Relations Officer Certificate</li>
+            </ul>
+            <div class="cert-thumbs">
+              <img src="images/certificates/c%23%20sololearn.png" data-fallback="https://i.imgur.com/6vT8Rp5.png" alt="C# SoloLearn Certificate" class="expandable-img">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="glass-card linkedin-vault-card">
+          <button id="linkedin-toggle-btn" class="linkedin-vault-toggle" type="button" aria-expanded="false">
+            <div class="vault-title-group">
+              <span class="cert-tag">CONSOLIDATED CREDENTIAL VAULT</span>
+              <h3>LinkedIn Learning, Microsoft &amp; GitHub Certifications (19 Certificates)</h3>
+              <p>Click to expand and view all completed courses in Cybersecurity, RHEL 9, Cloud Auditing, and GitHub Copilot.</p>
+            </div>
+            <span class="vault-chevron" id="vault-chevron">▼ Expand All</span>
+          </button>
+
+          <div id="linkedin-vault-content" class="linkedin-vault-content hidden">
+            <div class="vault-columns">
+              <div>
+                <h4>Cybersecurity, Linux &amp; Cloud</h4>
+                <ul class="cert-list">
+                  <li><strong>Career Essentials in Cybersecurity</strong> – Microsoft &amp; LinkedIn (Feb 2026)</li>
+                  <li><strong>Cybersecurity Foundations</strong> – LinkedIn (Feb 2026)</li>
+                  <li><strong>Cybersecurity Awareness: Cybersecurity Terminology</strong> – LinkedIn (Feb 2026)</li>
+                  <li><strong>The Cybersecurity Threat Landscape</strong> – LinkedIn (Jan 2026)</li>
+                  <li><strong>Cloud Security and Audit Fundamentals: AWS, Azure, and GCP</strong> – LinkedIn (Jan 2026)</li>
+                  <li><strong>Complete Guide to Red Hat Enterprise Linux 9 (RHEL 9)</strong> – LinkedIn (Jan 2026)</li>
+                  <li><strong>Cisco Certified Support Technician (CCST) Networking Cert Prep</strong> – LinkedIn (Jan 2026)</li>
+                  <li><strong>Cyber Asset Management: Securing Digital Resources</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>ISC2 Certified Secure Software Lifecycle Professional (CSSLP) Cert Prep</strong> – LinkedIn (Sep 2025)</li>
+                </ul>
+              </div>
+              <div>
+                <h4>AI Engineering, Architecture &amp; Enterprise Tools</h4>
+                <ul class="cert-list">
+                  <li><strong>Career Essentials in GitHub Copilot Professional Certificate</strong> – GitHub (Sep 2025)</li>
+                  <li><strong>Supercharge the Development Process with GitHub Extensions for Copilot Chat</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>AI Pair Programming with GitHub Copilot</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>Refactoring with GitHub Copilot</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>Responsible GitHub Copilot: Creating Reliable Code Ethically</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>Introduction to IT Architecture</strong> – LinkedIn (Jan 2026)</li>
+                  <li><strong>Microsoft System Center Configuration Manager Essential Training</strong> – LinkedIn (Feb 2026)</li>
+                  <li><strong>Working Smarter with Microsoft 365</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>Word Essential Training (Microsoft 365)</strong> – LinkedIn (Sep 2025)</li>
+                  <li><strong>Team Collaboration &amp; Microsoft Teams / Outlook Essential Training</strong> – LinkedIn (Aug 2025)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tab-socials" class="tab-panel">
+        <div class="section-banner">
+          <span class="card-eyebrow">CONNECT &amp; MEMORIES</span>
+          <h2>Socials &amp; Life Gallery</h2>
+          <p>Hover over any photo for a quick caption, or click to expand! (Say hi to Mochi roaming below!)</p>
+        </div>
+
+        <div class="social-buttons-row">
+          <a href="https://www.linkedin.com/in/khloe-tatel/" target="_blank" rel="noopener" class="social-pill-btn linkedin">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/KTatel" target="_blank" rel="noopener" class="social-pill-btn github">
+            <span>GitHub (KTatel)</span>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="social-pill-btn facebook">
+            <span>Facebook</span>
+          </a>
+          <a href="mailto:khloetatel@gmail.com" class="social-pill-btn email">
+            <span>Email Me</span>
+          </a>
+        </div>
+
+        <div class="glass-card life-gallery-card">
+          <h3 class="section-subtitle">Snapshots of My Life, Friends, Milestones &amp; Pets</h3>
+          <div id="socials-gallery-grid" class="hover-gallery-grid">
+          </div>
+        </div>
+
+        <div id="roaming-pet" class="roaming-pet" title="Click to pet Mochi!">
+          <div id="pet-bubble" class="pet-bubble">Hewwo! ♡</div>
+          <div class="pet-sprite" aria-hidden="true">
+            <svg viewBox="0 0 80 70" width="68" height="60">
+              <ellipse cx="40" cy="58" rx="22" ry="6" fill="rgba(219,39,119,0.18)"/>
+              <ellipse cx="26" cy="18" rx="7" ry="15" transform="rotate(-12 26 18)" fill="#fff0f6" stroke="#f472b6" stroke-width="2.5"/>
+              <ellipse cx="26" cy="18" rx="3.5" ry="9" transform="rotate(-12 26 18)" fill="#fbcfe8"/>
+              <ellipse cx="54" cy="18" rx="7" ry="15" transform="rotate(12 54 18)" fill="#fff0f6" stroke="#f472b6" stroke-width="2.5"/>
+              <ellipse cx="54" cy="18" rx="3.5" ry="9" transform="rotate(12 54 18)" fill="#fbcfe8"/>
+              <ellipse cx="40" cy="40" rx="24" ry="20" fill="#ffffff" stroke="#f472b6" stroke-width="2.5"/>
+              <circle cx="31" cy="38" r="3" fill="#4a148c"/>
+              <circle cx="49" cy="38" r="3" fill="#4a148c"/>
+              <ellipse cx="25" cy="42" rx="4" ry="2.2" fill="#fb7185" opacity="0.6"/>
+              <ellipse cx="55" cy="42" rx="4" ry="2.2" fill="#fb7185" opacity="0.6"/>
+              <path d="M37 43 Q40 46 43 43" stroke="#db2777" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="52" cy="26" r="4.5" fill="#f472b6"/>
+              <circle cx="52" cy="26" r="1.8" fill="#fef08a"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+     
+      <section id="tab-game" class="tab-panel">
+        <div class="section-banner">
+          <span class="card-eyebrow">MINI ARCADE</span>
+          <h2>Sakura Breeze: Intricate Canopy Maze</h2>
+          <p>Guide the glowing Sakura Petal through the enchanted forest air currents! Collect all golden pollen &amp; dewdrops while avoiding the wind spirits.</p>
+        </div>
+
+        <div class="glass-card game-wrapper">
+          <div class="game-hud">
+            <div class="hud-stat">Score: <strong id="maze-score">0</strong></div>
+            <div class="hud-stat">Pollen Left: <strong id="maze-dots">0</strong></div>
+            <div class="hud-stat">Lives: <strong id="maze-lives">♥♥♥</strong></div>
+            <button id="maze-restart-btn" class="maze-btn" type="button">Restart Breeze</button>
+          </div>
+
+          <div class="canvas-container">
+            <canvas id="maze-canvas" width="608" height="416"></canvas>
+            <div id="maze-overlay" class="maze-overlay hidden">
+              <h3 id="maze-status-title">Canopy Cleared!</h3>
+              <p id="maze-status-desc">Your petal danced through every breeze!</p>
+              <button id="maze-play-again" class="press-start-btn" type="button">Play Again</button>
+            </div>
+          </div>
+
+          <div class="maze-controls">
+            <span class="control-hint">Use <strong>Arrow Keys / WASD</strong> or tap buttons:</span>
+            <div class="dpad">
+              <button class="dpad-btn" data-dir="up">▲</button>
+              <div class="dpad-mid">
+                <button class="dpad-btn" data-dir="left">◀</button>
+                <button class="dpad-btn" data-dir="down">▼</button>
+                <button class="dpad-btn" data-dir="right">▶</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="lightbox-modal" class="lightbox-modal hidden" role="dialog" aria-modal="true" aria-label="Expanded Image Preview">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close preview">✕</button>
+    <img id="lightbox-img" src="" alt="Expanded view">
+    <p id="lightbox-caption" class="lightbox-caption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
